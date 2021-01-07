@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/playlists/me",
+      "handler": "playlist.findUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playlists/public",
+      "handler": "playlist.findPublic",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playlists/count",
+      "handler": "playlist.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/playlists/:id",
+      "handler": "playlist.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/playlists",
+      "handler": "playlist.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/playlists/:id/:songId",
+      "handler": "playlist.addSong",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/playlists/:id",
+      "handler": "playlist.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/playlists/:id",
+      "handler": "playlist.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
